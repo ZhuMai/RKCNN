@@ -1,18 +1,20 @@
 # RKCNN
 
 
-This repository is for [Convolutional neural networks combined with Runge–Kutta methods](https://link.springer.com/article/10.1007/s00521-022-07785-2) ([PDF](https://rdcu.be/cXBna)).
+This repository is for [Convolutional neural networks combined with Runge–Kutta methods](https://doi.org/10.1007/s00521-022-07785-2) ([PDF](https://rdcu.be/cXBna)).
 
 ### citation
 If you find RKCNN useful in your research, please consider citing:
 
 	@article{zhu2022convolutional,
-	 title={Convolutional neural networks combined with Runge--Kutta methods},
-	 author={Zhu, Mai and Chang, Bo and Fu, Chong},
-	 journal={Neural Computing and Applications},
-	 pages={1--15},
-	 year={2022},
-	 publisher={Springer}
+	  title={Convolutional neural networks combined with Runge--Kutta methods},
+	  author={Zhu, Mai and Chang, Bo and Fu, Chong},
+	  journal={Neural Computing and Applications},
+	  volume={35},
+	  pages={1629–1643},
+	  year={2023},
+	  publisher={Springer},
+	  doi="10.1007/s00521-022-07785-2"
 	}
 
 An example to train an RKCNN-E-5_5_5 with growth rate 80 on CIFAR-10:
