@@ -141,7 +141,7 @@ def main():
     if args.bottleneck:
         print('Bottleneck is used.')
     else:
-        print("Only bottelneck mode is supportted now.")
+        print("Only bottelneck mode is supported now.")
         return
 
     if args.no_multiscale:
