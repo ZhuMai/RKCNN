@@ -37,7 +37,7 @@ class RK_block(nn.Module):
                 self.conv_3x3_update = nn.ModuleList([nn.Conv2d(wk, input_channels, kernel_size = 3, stride = 1, padding = 1, bias = False)
                                                     for i in range(s)])
         else:
-            print("Only bottelneck mode is supportted now.")
+            print("Only bottelneck mode is supported now.")
 
 
     def forward(self, x):
@@ -62,7 +62,7 @@ class RK_block(nn.Module):
                 if self.keep_prob < 1:
                     next_layer = F.dropout(next_layer, 1 - self.keep_prob, self.training)
             else:
-                print("Only bottelneck mode is supportted now.")
+                print("Only bottelneck mode is supported now.")
 
             bottom_blob = torch.cat((bottom_blob, next_layer), 1)
 
@@ -90,7 +90,7 @@ class RK_block(nn.Module):
                         if self.keep_prob < 1:
                             top_blob = F.dropout(top_blob, 1 - self.keep_prob, self.training)
                     else:
-                        print("Only bottelneck mode is supportted now.")
+                        print("Only bottelneck mode is supported now.")
 
                     self.blob_final[stage_id]=top_blob
         else:
@@ -117,7 +117,7 @@ class RK_block(nn.Module):
                         if self.keep_prob < 1:
                             top_blob = F.dropout(top_blob, 1 - self.keep_prob, self.training)
                     else:
-                        print("Only bottelneck mode is supportted now.")
+                        print("Only bottelneck mode is supported now.")
 
                     self.blob_final.append(top_blob)
 
