@@ -20,18 +20,18 @@ If you find RKCNN useful in your research, please consider citing:
 An example to train an RKCNN-E-5_5_5 with growth rate 80 on CIFAR-10:
 
 ```bash
-python3 train_cifar.py --out_features 10 --update1 0 --update2 0 --update3 0 --k1 80 --k2 80 --k3 80 --s1 5 --s2 5 --s3 5 --batch-size 32 --attention --bottleneck
+python3 train_cifar.py --out_features 10 --update1 0 --update2 0 --update3 0 --k1 80 --k2 80 --k3 80 --s1 5 --s2 5 --s3 5 --batch-size 32 --attention --bottleneck --data_augmentation
 ```
 
 An example to train an RKCNN-I-5_5_5 with growth rate 80 on CIFAR-100:
 
 ```bash
-python3 train_cifar.py --out_features 100 --replace --k1 80 --k2 80 --k3 80 --s1 5 --s2 5 --s3 5 --batch-size 32 --attention --bottleneck
+python3 train_cifar.py --out_features 100 --replace --k1 80 --k2 80 --k3 80 --s1 5 --s2 5 --s3 5 --batch-size 32 --attention --bottleneck --data_augmentation
 ```
 
 An example to train an RKCNN-R-5_5_5 with growth rate 80 on CIFAR-100:
 
 ```bash
-python3 train_cifar.py --out_features 100 --k1 80 --k2 80 --k3 80 --s1 5 --s2 5 --s3 5 --batch-size 32 --attention --bottleneck
+python3 train_cifar.py --out_features 100 --k1 80 --k2 80 --k3 80 --s1 5 --s2 5 --s3 5 --batch-size 32 --attention --bottleneck --data_augmentation
 ```
 This article and repository are used for image classification. If you are interested in semantic segmentation, you can refer to [RKSeg](https://github.com/ZhuMai/RKSeg) and [RKSeg+](https://github.com/ZhuMai/RKSegPlus).
